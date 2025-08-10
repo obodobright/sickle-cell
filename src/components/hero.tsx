@@ -13,7 +13,7 @@ export const HeroSection = ({ scrollToSection }: HeroProps) => {
                         <div className="space-y-4">
                             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                                 Sickle Cell Walk
-                                <span className="text-red-600"> Lagos 2025</span>
+                                <span className="text-red-600"> Lagos 2026</span>
                             </h1>
                             <p className="text-xl text-gray-600 leading-relaxed">
                                 Walking Together for Access to Treatment in Nigeria
@@ -73,7 +73,7 @@ export const HeroSection = ({ scrollToSection }: HeroProps) => {
                         <div className="absolute -top-6 -right-6 bg-white rounded-xl p-4 shadow-xl">
                             <div className="flex items-center space-x-2">
                                 <Calendar className="h-5 w-5 text-red-600" />
-                                <span className="font-semibold text-sm">March 15, 2025</span>
+                                <span className="font-semibold text-sm">March 15, 2026</span>
                             </div>
                         </div>
 

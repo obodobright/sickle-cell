@@ -74,7 +74,7 @@ export const AboutSection = () => {
                             <Calendar className="h-8 w-8" />
                             <div>
                                 <h4 className="font-semibold">Date</h4>
-                                <p>Saturday, March 15, 2025</p>
+                                <p>Saturday, March 15, 2026</p>
                             </div>
                         </div>
                         <div className="flex items-center space-x-4">
