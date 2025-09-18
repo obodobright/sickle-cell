@@ -1,0 +1,24 @@
+{
+  "name": "Sickle Cell Walk Lagos 2026",
+  "short_name": "Sickle Cell Walk",
+  "description": "Walking Together for Access to Treatment in Nigeria",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#dc2626",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "categories": ["health", "lifestyle", "medical"]
+}

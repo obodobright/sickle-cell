@@ -25,7 +25,7 @@ export const EventsSection = () => {
                         <div className="space-y-3">
                             <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                                 <span className="font-medium">Distance:</span>
-                                <span className="text-red-600 font-semibold">5 Kilometers</span>
+                                <span className="text-red-600 font-semibold">11 Kilometers</span>
                             </div>
                             <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                                 <span className="font-medium">Start Point:</span>
@@ -37,7 +37,7 @@ export const EventsSection = () => {
                             </div>
                             <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                                 <span className="font-medium">Estimated Time:</span>
-                                <span className="text-red-600 font-semibold">1-2 Hours</span>
+                                <span className="text-red-600 font-semibold">1-3 Hours</span>
                             </div>
                         </div>
                     </div>

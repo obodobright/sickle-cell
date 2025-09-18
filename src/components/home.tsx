@@ -96,7 +96,7 @@ const HomePage = () => {
             <Testimonials />
 
             {/* Sponsors & Partners */}
-            <SponsorsPartners />
+            {/* <SponsorsPartners /> */}
             {/* Footer */}
             <Footer scrollToSection={scrollToSection} />
         </div>

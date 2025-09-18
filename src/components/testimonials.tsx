@@ -77,7 +77,7 @@ export const Testimonials = () => {
                 </div>
 
                 {/* Video Testimonials Section */}
-                <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="bg-white hidden rounded-2xl p-8 shadow-lg">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Video Stories</h3>
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-gray-100 rounded-xl p-8 h-64 flex items-center justify-center">

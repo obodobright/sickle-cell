@@ -69,11 +69,11 @@ export const Footer = ({ scrollToSection }: { scrollToSection: (scrolls: string)
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+234 803 123 4567</span>
+                <span>+234 805 385 7501</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@sicklecellwalklagos.ng</span>
+                <span>Olusgataiwotomiwaalice@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1" />
@@ -82,7 +82,7 @@ export const Footer = ({ scrollToSection }: { scrollToSection: (scrolls: string)
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
             <p className="text-gray-400 mb-4">Stay updated on our advocacy efforts</p>
             <div className="space-y-3">
@@ -95,7 +95,7 @@ export const Footer = ({ scrollToSection }: { scrollToSection: (scrolls: string)
                 Subscribe
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-gray-800 pt-8">

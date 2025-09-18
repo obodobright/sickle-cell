@@ -2,10 +2,10 @@ import { Calendar, CheckCircle, Clock, MapPin } from "lucide-react"
 
 export const AboutSection = () => {
     return (
-        <section id="about" className="py-20 bg-white">
+        <section id="about" className="py-20 bg-white" role="main" aria-labelledby="about-heading">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">About the Walk</h2>
+                    <h2 id="about-heading" className="text-4xl font-bold text-gray-900 mb-4">About the Walk</h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Our mission is to raise awareness and advocate for accessible sickle cell treatment in Nigeria
                     </p>
@@ -15,31 +15,32 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-bold text-gray-900">Why This Walk Matters</h3>
                         <p className="text-gray-600 leading-relaxed">
-                            Sickle cell disease affects millions of Nigerians, yet access to life-saving medications and treatments remains limited.
-                            While patients in the UK and other developed countries have access to comprehensive care, Nigerian patients often struggle
-                            to afford or find essential medications.
+                            Warriors Walk 2026 (also known as Warriors Stride) is a Guinness World Record attempt for the Longest Walk by Sickle Cell Warriors, set to take place on the Third Mainland Bridge, Lagos, Nigeria, in 2026.
+
                         </p>
                         <p className="text-gray-600 leading-relaxed">
-                            Our walk aims to bring attention to this healthcare disparity and advocate for policy changes that will make
-                            sickle cell treatments more accessible and affordable in Nigeria.
+                            The event will gather Sickle Cell Warriors, advocates, health experts, and the general public for a unified purpose — to raise awareness, inspire resilience, and call for access to modern, affordable treatment for sickle cell disease.
+
                         </p>
 
                         <div className="space-y-4">
+                            <h4>Why It Matters
+                            </h4>
                             <div className="flex items-center space-x-3">
                                 <CheckCircle className="h-5 w-5 text-green-600" />
-                                <span className="text-gray-700">Raise awareness about sickle cell disease</span>
+                                <span className="text-gray-700">1 in 4 Nigerians carries the sickle cell gene</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <CheckCircle className="h-5 w-5 text-green-600" />
-                                <span className="text-gray-700">Advocate for accessible treatment options</span>
+                                <span className="text-gray-700">Over 150,000 children are born yearly with SCD in Nigeria, the highest globally.</span>
                             </div>
+                            {/* <div className="flex items-center space-x-3">
+                                <CheckCircle className="h-5 w-5 text-green-600" />
+                                <span className="text-gray-700">Treatments that improve quality of life exist, but they remain inaccessible or unaffordable for many patients.</span>
+                            </div> */}
                             <div className="flex items-center space-x-3">
                                 <CheckCircle className="h-5 w-5 text-green-600" />
-                                <span className="text-gray-700">Support sickle cell warriors and families</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <CheckCircle className="h-5 w-5 text-green-600" />
-                                <span className="text-gray-700">Build a stronger community network</span>
+                                <span className="text-gray-700">This walk is not just about breaking a record — it’s about changing lives.</span>
                             </div>
                         </div>
                     </div>
@@ -74,7 +75,7 @@ export const AboutSection = () => {
                             <Calendar className="h-8 w-8" />
                             <div>
                                 <h4 className="font-semibold">Date</h4>
-                                <p>Saturday, March 15, 2026</p>
+                                <p>Saturday, March 14, 2026</p>
                             </div>
                         </div>
                         <div className="flex items-center space-x-4">
