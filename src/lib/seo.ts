@@ -1,41 +1,42 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const siteConfig = {
-  name: 'Sickle Cell Walk Lagos',
-  description: 'Walking Together for Access to Treatment in Nigeria',
-  url: 'https://sickle-cell.vercel.app',
-  ogImage: '/sss.jpg',
+  name: "Sickle Cell Walk Lagos",
+  description: "Walking Together for Access to Treatment in Nigeria",
+  url: "https://sickle-cell.vercel.app",
+  ogImage: "/sss.jpg",
   links: {
-    twitter: 'https://twitter.com/sicklecellwalklagos',
-    facebook: 'https://facebook.com/sicklecellwalklagos',
-    instagram: 'https://instagram.com/sicklecellwalklagos',
+    twitter: "https://twitter.com/sicklecellwalklagos",
+    facebook: "https://facebook.com/sicklecellwalklagos",
+    instagram: "https://instagram.com/sicklecellwalklagos",
   },
   keywords: [
-    'sickle cell walk',
-    'Lagos 2026',
-    'sickle cell awareness',
-    'Nigeria healthcare',
-    'Third Mainland Bridge',
-    'sickle cell treatment',
-    'health advocacy',
-    'charity walk',
-    'medical access',
-    'healthcare equity',
-    'sickle cell disease',
-    'health awareness',
-    'charity event',
-    'Lagos health walk',
-    'medical advocacy'
+    "sickle cell walk",
+    "Lagos 2026",
+    "sickle cell awareness",
+    "Nigeria healthcare",
+    "Third Mainland Bridge",
+    "sickle cell treatment",
+    "health advocacy",
+    "charity walk",
+    "medical access",
+    "healthcare equity",
+    "sickle cell disease",
+    "health awareness",
+    "charity event",
+    "Lagos health walk",
+    "medical advocacy",
   ],
   event: {
-    name: 'Sickle Cell Walk Lagos 2026',
-    date: '2026-03-14',
-    location: 'Third Mainland Bridge, Lagos, Nigeria',
-    description: 'Join us for a 11km walk to raise awareness and funds for sickle cell treatment access in Nigeria',
-    organizer: 'Sickle Cell Walk Lagos',
-    fundraisingGoal: '£165,000,000',
-    expectedParticipants: '1000+'
-  }
+    name: "Sickle Cell Walk Lagos 2026",
+    date: "2026-03-14",
+    location: "Third Mainland Bridge, Lagos, Nigeria",
+    description:
+      "Join us for a 11km walk to raise awareness and funds for sickle cell treatment access in Nigeria",
+    organizer: "Sickle Cell Walk Lagos",
+    fundraisingGoal: "£165,000,000",
+    expectedParticipants: "1000+",
+  },
 };
 
 export function generateMetadata({
@@ -43,7 +44,7 @@ export function generateMetadata({
   description,
   image,
   url,
-  type = 'website',
+  type = "website",
 }: {
   title?: string;
   description?: string;
@@ -68,8 +69,21 @@ export function generateMetadata({
       canonical: fullUrl,
     },
     openGraph: {
-      type: type as any,
-      locale: 'en_NG',
+      type: type as
+        | "website"
+        | "article"
+        | "book"
+        | "profile"
+        | "music.song"
+        | "music.album"
+        | "music.playlist"
+        | "music.radio_station"
+        | "video.movie"
+        | "video.episode"
+        | "video.tv_show"
+        | "video.other"
+        | undefined,
+      locale: "en_NG",
       url: fullUrl,
       title: fullTitle,
       description: fullDescription,
@@ -84,11 +98,11 @@ export function generateMetadata({
       ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: fullTitle,
       description: fullDescription,
       images: [fullImage],
-      creator: '@sicklecellwalklagos',
+      creator: "@sicklecellwalklagos",
     },
     robots: {
       index: true,
@@ -96,9 +110,9 @@ export function generateMetadata({
       googleBot: {
         index: true,
         follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
       },
     },
   };
@@ -106,54 +120,50 @@ export function generateMetadata({
 
 export function generateStructuredData() {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Event',
+    "@context": "https://schema.org",
+    "@type": "Event",
     name: siteConfig.event.name,
     description: siteConfig.event.description,
     startDate: siteConfig.event.date,
     endDate: siteConfig.event.date,
     location: {
-      '@type': 'Place',
+      "@type": "Place",
       name: siteConfig.event.location,
       address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Lagos',
-        addressCountry: 'Nigeria'
-      }
+        "@type": "PostalAddress",
+        addressLocality: "Lagos",
+        addressCountry: "Nigeria",
+      },
     },
     organizer: {
-      '@type': 'Organization',
+      "@type": "Organization",
       name: siteConfig.event.organizer,
-      url: siteConfig.url
+      url: siteConfig.url,
     },
     offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'NGN',
-      availability: 'https://schema.org/InStock'
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "NGN",
+      availability: "https://schema.org/InStock",
     },
-    eventStatus: 'https://schema.org/EventScheduled',
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode'
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   };
 }
 
 export function generateOrganizationStructuredData() {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
+    "@context": "https://schema.org",
+    "@type": "Organization",
     name: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
     logo: `${siteConfig.url}/android-chrome-512x512.png`,
-    sameAs: [
-      siteConfig.links.twitter,
-      siteConfig.links.facebook,
-      siteConfig.links.instagram
-    ],
+    sameAs: [siteConfig.links.twitter, siteConfig.links.facebook, siteConfig.links.instagram],
     contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'customer service',
-      availableLanguage: 'English'
-    }
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      availableLanguage: "English",
+    },
   };
 }
