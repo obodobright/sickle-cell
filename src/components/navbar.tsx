@@ -1,4 +1,5 @@
 import { Heart, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect } from "react";
 
 
@@ -42,8 +43,7 @@ export const Navbar = ({ isMenuOpen, activeSection, setActiveSection, setIsMenuO
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center">
-                        <Heart className="h-8 w-8 text-red-600 mr-2" />
-                        <span className="text-xl font-bold text-gray-900">Sickle Cell Walk Lagos</span>
+                        <Image src="/sickle-cell.jpg" width={100} height={100} alt="logo" className="w-" />
                     </div>
 
                     {/* Desktop Navigation */}
