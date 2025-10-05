@@ -1,32 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import {
-    Menu,
-    X,
-    MapPin,
-    Calendar,
-    Clock,
-    Users,
-    Heart,
-    Share2,
-    Phone,
-    Mail,
-    Facebook,
-    Instagram,
-    Twitter,
-    ChevronRight,
-    Star,
-    Shield,
-    Target,
-    CheckCircle
-} from 'lucide-react';
+
 import { Navbar } from './navbar';
 import { HeroSection } from './hero';
 import { AboutSection } from './about';
 import { SupportSection } from './support';
 import { Footer } from './footer';
-import { SponsorsPartners } from './sponsors';
 import { Testimonials } from './testimonials';
 import { EventsSection } from './events';
 import { Donation } from './donation';

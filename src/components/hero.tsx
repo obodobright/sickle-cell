@@ -6,7 +6,7 @@ interface HeroProps {
 }
 export const HeroSection = ({ scrollToSection }: HeroProps) => {
     return (
-        <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex items-center" role="banner" aria-label="Hero section">
+        <section id="home" className="pt-30 md:pt-20 min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex items-center" role="banner" aria-label="Hero section">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">
@@ -50,7 +50,7 @@ export const HeroSection = ({ scrollToSection }: HeroProps) => {
                                 <div className="text-sm text-gray-600">Expected Walkers</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-red-600">11KM</div>
+                                <div className="text-3xl font-bold text-red-600">1hr</div>
                                 <div className="text-sm text-gray-600">Walk Distance</div>
                             </div>
                             <div className="text-center">
@@ -61,7 +61,7 @@ export const HeroSection = ({ scrollToSection }: HeroProps) => {
                     </div>
 
                     <div className="relative">
-                        <div style={{ backgroundImage: "url(/sss.jpg)" }} className="bg-cover bg-center filter grayscale bg-gradient-to-r from-red-100 to-red-200 rounded-3xl p-8 h-96 flex items-center justify-center">
+                        <div style={{ backgroundImage: "url(/walkingstride.png)" }} className="bg-cover bg-center filter grayscale bg-gradient-to-r from-red-100 to-red-200 rounded-3xl p-8 h-96 flex items-center justify-center">
                             <div className="text-center hidden text-red-800">
                                 <Heart className="h-24 w-24 mx-auto mb-4" />
                                 <p className="text-lg font-semibold">Hero Image/Video</p>

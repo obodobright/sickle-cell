@@ -6,9 +6,7 @@ export const AboutSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 id="about-heading" className="text-4xl font-bold text-gray-900 mb-4">About the Walk</h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Our mission is to raise awareness and advocate for accessible sickle cell treatment in Nigeria
-                    </p>
+
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">

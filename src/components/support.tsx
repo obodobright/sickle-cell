@@ -1,4 +1,6 @@
 import { ChevronRight, Facebook, Heart, Instagram, Share2, Target, Twitter, Users } from "lucide-react"
+import { CiInstagram, CiTwitter } from "react-icons/ci"
+import { FaTiktok } from "react-icons/fa"
 
 export const SupportSection = ({ scrollToSection }: { scrollToSection: (scrolls: string) => void }) => {
     return (
@@ -18,7 +20,7 @@ export const SupportSection = ({ scrollToSection }: { scrollToSection: (scrolls:
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-4">Join the Walk</h3>
                         <p className="text-gray-600 mb-6">
-                            Walk with us on March 15th and show your support for sickle cell awareness. Every step counts!
+                            Walk with us on March 14th and show your support for sickle cell awareness. Every step counts!
                         </p>
                         <button
                             onClick={() => scrollToSection('register')}
@@ -72,15 +74,22 @@ export const SupportSection = ({ scrollToSection }: { scrollToSection: (scrolls:
                             Spread the word on social media and help us reach more people with our important message.
                         </p>
                         <div className="flex space-x-3">
-                            <button className="text-purple-600 hover:text-purple-700">
-                                <Facebook className="h-5 w-5" />
-                            </button>
-                            <button className="text-purple-600 hover:text-purple-700">
-                                <Instagram className="h-5 w-5" />
-                            </button>
-                            <button className="text-purple-600 hover:text-purple-700">
-                                <Twitter className="h-5 w-5" />
-                            </button>
+
+                            <a href="https://tiktok.com/warriorsstride">
+                                <button className="text-purple-600 hover:text-purple-700">
+                                    <FaTiktok className="" />
+                                </button>
+                            </a>
+                            <a href="https://instagram.com/Warriorstrideng">
+                                <button className="text-purple-600 hover:text-purple-700">
+                                    <CiInstagram className="h-5 w-5" />
+                                </button>
+                            </a>
+                            <a href="https://x.com/Warriorsstride">
+                                <button className=" text-purple-600 hover:text-purple-700">
+                                    <CiTwitter className="h-5 w-5" />
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
